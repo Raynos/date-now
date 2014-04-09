@@ -39,7 +39,7 @@ var ts = now()
 
 ## MIT Licenced
 
-  [1]: https://secure.travis-ci.org/Colingo/date-now.png
-  [2]: http://travis-ci.org/Colingo/date-now
-  [3]: http://ci.testling.com/Colingo/date-now.png
-  [4]: http://ci.testling.com/Colingo/date-now
+  [1]: https://secure.travis-ci.org/Raynos/date-now.png
+  [2]: http://travis-ci.org/Raynos/date-now
+  [3]: http://ci.testling.com/Raynos/date-now.png
+  [4]: http://ci.testling.com/Raynos/date-now

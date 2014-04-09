@@ -4,6 +4,7 @@
 
 [![browser support][3]][4]
 
+
 A requirable version of Date.now()
 
 Use-case is to be able to mock out Date.now() using require interception.

@@ -4,16 +4,16 @@
   "description": "A requirable version of Date.now()",
   "keywords": [],
   "author": "Raynos <raynos2@gmail.com>",
-  "repository": "git://github.com/Colingo/date-now.git",
+  "repository": "git://github.com/Raynos/date-now.git",
   "main": "index",
-  "homepage": "https://github.com/Colingo/date-now",
+  "homepage": "https://github.com/Raynos/date-now",
   "contributors": [
     {
       "name": "Artem Shoobovych"
     }
   ],
   "bugs": {
-    "url": "https://github.com/Colingo/date-now/issues",
+    "url": "https://github.com/Raynos/date-now/issues",
     "email": "raynos2@gmail.com"
   },
   "dependencies": {},
@@ -25,7 +25,7 @@
   "licenses": [
     {
       "type": "MIT",
-      "url": "http://github.com/Colingo/date-now/raw/master/LICENSE"
+      "url": "http://github.com/Raynos/date-now/raw/master/LICENSE"
     }
   ],
   "scripts": {

@@ -5,24 +5,34 @@ var now = require("../index")
 var seeded = require("../seed")
 
 test("date", function (assert) {
+    var before = new Date().getTime()
     var ts = now()
-    var ts2 = Date.now()
-    assert.equal(ts, ts2)
+    var after = new Date().getTime()
+    assert.ok(before <= ts)
+    assert.ok(after >= ts)
     assert.end()
 })
 
 test("seeded", function (assert) {
+    var before = now()
     var time = seeded(40)
-    var ts = time()
+    var after = now()
 
-    within(assert, time(), 40, 5)
+    var bts = now()
+    var ts = time()
+    var ats = now()
+
+    assert.ok(ts >= bts - before + 40)
+    assert.ok(ts <= ats - after + 40)
+
     setTimeout(function () {
-        within(assert, time(), 90, 10)
+        var bts = now()
+        var ts = time()
+        var ats = now()
+
+        assert.ok(ts >= bts - before + 40)
+        assert.ok(ts <= ats - after + 40)
+
         assert.end()
     }, 50)
 })
-
-function within(assert, a, b, offset) {
-    assert.ok(a + offset > b)
-    assert.ok(a - offset < b)
-}

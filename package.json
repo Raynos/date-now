@@ -33,6 +33,11 @@
     "build": "browserify test/index.js -o test/static/bundle.js",
     "testem": "testem"
   },
+  "component": {
+    "scripts": {
+      "date-now/index.js": "index.js"
+    }
+  },
   "testling": {
     "files": "test/*.js",
     "browsers": {
